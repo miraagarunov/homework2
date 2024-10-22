@@ -39,9 +39,23 @@ main {
     align-items: center;
     padding: 20px;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: center;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
